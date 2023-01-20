@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* <!-- HERE TAG OF GAME WITH CSS TRANSITION AND TRANSFORM VALUES --> */
+
+.field {
+    border: 5px solid rgb(182, 6, 6);
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.ball {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 17, 0);
+    border-radius: 50%;
+    position: relative;
+    left: 520px;
+    transition: transform 1s ease-out 0.3s;
+}
+
+.field:hover .bat {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+    transition: 0.2s ease-in;
+}
+
+.field:hover .ball {
+    transform: translate(1900px, -550px);
+}
+
+
+/* <!-- HERE TRY CSS TRANSFORM:'SCALE(), ROATATE(), SKEW(), TRANSLATE()' --> */
+
+
+/* .box-container {
+    width: 900px;
+    height: 1200px;
+    border: solid red;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: #00fff2;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+.inner {
+    background-color: #d80085;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 3s ease-in;
+}
+
+.inner:hover {
+    transform: scale(0.50) rotate(45deg) translate(500px);
+    border-radius: 50%;
+    font-size: 25px;
+    background: #ffa806;
+} */
