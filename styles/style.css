@@ -2,13 +2,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/*  HERE CSS STYLE OF PRACTICING CSS GRID LAYOUT  */
+
+.container {
+    width: 100%;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 70px repeat(5, 100px);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 100px 200px;
+    background: rgb(102, 102, 102);
+}
+
+.day {
+    background: rgb(245, 255, 106);
+    /* height: 35px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: rgb(160, 228, 255);
+    /* height: 75px; */
+    border-radius: 7px;
+}
+
+.wo-day {
+    background: rgb(241, 205, 205);
 }
 
 
 /*  HERE CSS STYLE OF CREATE A FORM FOR LOGIN SYSTEM  */
 
-
-/* 
 .login-form {
     border: 2px solid #c20909;
     display: flex;
@@ -42,13 +81,12 @@
     border-radius: 5px;
     padding: 10px;
     color: rgb(224, 224, 224);
-} */
+}
 
 
 /* <!-- HERE TAG OF GAME WITH CSS TRANSITION AND TRANSFORM VALUES --> */
 
-
-/* .field {
+.field {
     border: 5px solid rgb(182, 6, 6);
     margin-top: 50px;
     overflow: hidden;
@@ -72,13 +110,12 @@
 
 .field:hover .ball {
     transform: translate(1900px, -550px);
-} */
+}
 
 
 /* <!-- HERE TRY CSS TRANSFORM:'SCALE(), ROATATE(), SKEW(), TRANSLATE()' --> */
 
-
-/* .box-container {
+.box-container {
     width: 900px;
     height: 1200px;
     border: solid red;
@@ -111,4 +148,4 @@
     border-radius: 50%;
     font-size: 25px;
     background: #ffa806;
-} */
+}
